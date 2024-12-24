@@ -1,0 +1,91 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --com-black: #000000;
+  --com-black-9: #141414;
+  --com-black-7: #1f1f1f;
+  --com-black-5: #262626;
+  --com-black-3: #434343;
+  --com-black-1: #595959;
+  --com-gray: #8c8c8c;
+  --com-white-1: #bfbfbf;
+  --com-white-3: #d9d9d9;
+  --com-white-5: #f0f0f0;
+  --com-white-7: #f5f5f5;
+  --com-white-9: #fafafa;
+  --com-white: #ffffff;
+
+  --shadow-black: rgba(0, 0, 0, 0.5);
+  --shadow-black-2: rgba(0, 0, 0, 0.5);
+  --shadow-white: rgba(255, 255, 255, 0.5);
+  --light-png-filter: invert(87%) sepia(98%) saturate(4811%) hue-rotate(352deg)
+    brightness(82%) contrast(100%);
+
+  --primary-color: #d00d14;
+  --color-background: var(--com-white-7);
+  --color-text: var(--com-black-7);
+  --color-text-light: var(--com-white);
+  --menu-background: var(--com-black-1);
+  --menu-hover: var(--com-black-3);
+  --menu-text-color: var(--com-white);
+  --menu-active-text-color: var(--primary-color);
+  --foot-background-color: var(--com-white-3);
+  --foot-text-color: var(--com-gray);
+  --layout-line: var(--com-white-3);
+  --layout-background: var(--com-white-7);
+  --layout-item-background: var(--com-white-9);
+  --shadow-color: var(--shadow-black);
+  --news-background:var(--com-white);
+  --news-divider:var(--com-white-5);
+  --news-time:var(--com-white-3);
+}
+
+.dark {
+  --primary-color: #950b0f;
+  --color-background: var(--com-black-7);
+  --color-text: var(--com-white-1);
+  --color-text-light: var(--com-white-1);
+  --menu-background: var(--com-black-5);
+  --menu-hover: var(--com-black-9);
+  --menu-text-color: var(--com-white-3);
+  --menu-active-text-color: var(--primary-color);
+  --foot-background-color: var(--com-black-9);
+  --foot-text-color: var(--com-gray);
+  --layout-line: var(--com-black-3);
+  --layout-background: var(--com-black-7);
+  --layout-item-background: var(--com-black-5);
+  --shadow-color: var(--shadow-black-2);
+  --news-background:var(--com-black-9);
+  --news-divider:var(--com-black-5);
+  --news-time:var(--com-black-3);
+
+  --light-png-filter: grayscale(100%) brightness(100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  min-width: 1200px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: background-color 0.2s !important;
+}
+
+.active-icon {
+  color: var(--primary-color);
+}
+
+.light-icon {
+  color: var(--color-text);
+}
+
+.light-png {
+  filter: var(--light-png-filter);
+}
