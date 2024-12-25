@@ -13,6 +13,7 @@
   --com-white-7: #f5f5f5;
   --com-white-9: #fafafa;
   --com-white: #ffffff;
+  --com-white-opc-3: #0000002D;
 
   --shadow-black: rgba(0, 0, 0, 0.5);
   --shadow-black-2: rgba(0, 0, 0, 0.5);
@@ -34,9 +35,10 @@
   --layout-background: var(--com-white-7);
   --layout-item-background: var(--com-white-9);
   --shadow-color: var(--shadow-black);
-  --news-background:var(--com-white);
-  --news-divider:var(--com-white-5);
-  --news-time:var(--com-white-3);
+  --notice-background: var(--com-white-opc-3);
+  --news-background: var(--com-white);
+  --news-divider: var(--com-white-5);
+  --news-time: var(--com-white-3);
 }
 
 .dark {
@@ -54,9 +56,9 @@
   --layout-background: var(--com-black-7);
   --layout-item-background: var(--com-black-5);
   --shadow-color: var(--shadow-black-2);
-  --news-background:var(--com-black-9);
-  --news-divider:var(--com-black-5);
-  --news-time:var(--com-black-3);
+  --news-background: var(--com-black-9);
+  --news-divider: var(--com-black-5);
+  --news-time: var(--com-black-3);
 
   --light-png-filter: grayscale(100%) brightness(100%);
 }
@@ -88,4 +90,11 @@ body {
 
 .light-png {
   filter: var(--light-png-filter);
+}
+
+@font-face {
+  font-family: 'Huxiaobo';
+  src: url('@/assets/fonts/huxiaobo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
